@@ -600,6 +600,11 @@ ul {
     font-size: 2.5rem;
     padding: 20px 60px;
   }
+	
+.brand a h1 {
+    font-size: 2.7rem;
+  }
+	
   h1.section-title {
     font-size: 6rem;
     margin-bottom: 4rem;
