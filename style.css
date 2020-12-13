@@ -644,7 +644,7 @@ ul {
   /* End Project */
 
   /* About */
-  #about .about {
+  /* #about .about {
     flex-direction: row;
   }
   #about .col-left {
@@ -665,38 +665,66 @@ ul {
   }
   #about .col-right h1 {
     text-align: left;
-  }
+  } */
   /* End About */
+
+  section {
+    padding: 0;
+  }
+
+  section .about-img img {
+    height: 450px;
+  }
+
+  section .section-title h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  #about .col-right p {
+    text-align: left;
+  }
 
   /* contact  */
   #contact .contact {
+    display: flex;
     flex-direction: column;
     padding: 100px 0;
     align-items: center;
     justify-content: center;
     min-width: 20vh;
   }
+
   #contact .contact-items {
-    width: 100%;
+    /* width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0;
+	margin: 0; */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
   }
+
   #contact .contact-item {
-    width: 30%;
+    width: 90%;
     margin: 0;
     flex-direction: row;
   }
+
   #contact .contact-item .icon {
     height: 100px;
     width: 100px;
   }
+
   #contact .contact-item .icon img {
     object-fit: contain;
   }
+
   #contact .contact-item .contact-info {
-    width: 100%;
+    width: 20rem;
     text-align: left;
     padding-left: 20px;
   }
